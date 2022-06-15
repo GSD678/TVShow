@@ -7,7 +7,13 @@ export interface ITVData {
   }],
   image: [{
     medium: string
+  }],
+  rating: [{
+    average: number
+  }],
+  runtime: number,
+  schedule: [{
+    time: string,
+    days: string
   }]
-
-
 }
