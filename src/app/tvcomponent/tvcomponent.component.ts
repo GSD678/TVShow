@@ -12,7 +12,7 @@ export class TVComponentComponent implements OnInit {
   constructor() {
     this.current = {
       name: "Barry",
-      status: "Runnning",
+      status: "Running",
       premiered: "2018-08-04",
       network: "HBO",
       image: "https://static.tvmaze.com/uploads/images/medium_portrait/403/1007647.jpg",

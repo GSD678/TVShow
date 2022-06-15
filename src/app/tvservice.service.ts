@@ -17,7 +17,10 @@ export class TVServiceService {
     return {
       name: data.name,
       network: data.network,
-      premier: data.premiered
+      premiered: data.premiered,
+      status: data.status,
+      runtime: data.runtime,
+      rating: data.rating,
     }
   }
 }
