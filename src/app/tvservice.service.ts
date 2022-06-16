@@ -10,7 +10,7 @@ export class TVServiceService {
   constructor(private httpClient: HttpClient) { }
 
   getCurrentTVData(name: string) {
-    return this.httpClient.get<ITVData>(`"https://api.tvmaze.com//singlesearch/shows?q=:${name}"`);
+    return this.httpClient.get<ITVData>(`https://api.tvmaze.com//singlesearch/shows?q=:${name}`);
       }
 
   transformToITV(data: ITVData) {
