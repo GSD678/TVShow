@@ -21,6 +21,7 @@ export class TVServiceService {
       status: data.status,
       runtime: data.runtime,
       rating: data.rating,
+      img: data.image[0]
     }
   }
 }
