@@ -1,13 +1,13 @@
 <div *ngIf="current">
   <div *ngIf="current.name">
     <span>{{ current.name }}</span><br />
-    <span>{{ current.premiered | date: "fullDate" }}</span><br />
-    <span>{{ current.network }}</span><br />
-    <span>{{ current.rating }},
+    <span>Date Premiered: {{ current.premiered | date: "fullDate" }}</span><br />
+    <span>Network: {{ current.network }}</span><br />
+    <span>Show Rating: {{ current.rating }}/10
       <p>Runtime: {{ current.runtime }} mins</p> </span><br />
-    <span>{{ current.time }} </span>
+    <span>Airs at: {{ current.time }} </span>
 
-    <span>{{ current.days }}</span>
+    <span>on {{ current.days }}</span>
   </div>
   <div *ngIf="current.image">
     <img [src]="current.image" />

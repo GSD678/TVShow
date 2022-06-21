@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div style="text-align: center"></div>
-    <h1>Your Personal TV guide</h1>
-    <div>Just one click away!</div>
-    <h2>Show details</h2>
+<div style="text-align: center;">
+    <mat-toolbar color="primary">Your Personal TV guide: Just one click away!
+    </mat-toolbar>
+  </div>
+    <div style="
+    width: 40%;
+    margin:auto;
+    padding:10px;">
+    <div style="text-align:center;">
     <mat-card>
       <app-tv-search></app-tv-search>
     </mat-card>
+  </div>
     <mat-card>
+      <div style="text-align:center;"><h2>Show details</h2></div>
       <app-tvcomponent></app-tvcomponent>
     </mat-card>
-  </body>
-</html>
+    </div>

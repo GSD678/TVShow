@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TVComponentComponent } from './tvcomponent/tvcomponent.component';
 import {HttpClientModule} from "@angular/common/http";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';  
 import { TVSearchComponent } from './tv-search/tv-search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import {MatToolbarModule} from '@angular/material/toolbar'
@@ -23,6 +24,8 @@ import {MatFormFieldModule} from '@angular/material/form-field'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatInputModule,
