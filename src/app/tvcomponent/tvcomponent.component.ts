@@ -12,22 +12,20 @@ export class TVComponentComponent implements OnInit {
 
   constructor(private tVServiceService: TVServiceService) {
     this.current = {
-      name: 'Barry',
-      status: 'Running',
-      premiered: '2018-08-04',
-      network: 'HBO',
+      name: '',
+      status: '',
+      premiered: '',
+      network: '',
       image:
         'https://static.tvmaze.com/uploads/images/medium_portrait/403/1007647.jpg',
-      rating: 7.5,
-      runtime: 30,
+      rating: 0,
+      runtime: 0,
       time: '22:00',
       days: 'Sunday',
     };
   }
 
   ngOnInit(): void {
-    this.tVServiceService
-      .getCurrentTVData('Friends')
-      .subscribe((data) => (this.current = data));
+    this.tVServiceService.getCurrentTVData('Game of Thrones').subscribe(data => this.current = data);
   }
 }

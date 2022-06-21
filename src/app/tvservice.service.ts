@@ -16,16 +16,17 @@ export class TVServiceService {
   }
 
   transformToITV(data: ITVData) {
+
     return {
       name: data.name,
-      network: data.network[0].name,
+      network: data.network.name,
       premiered: data.premiered,
       status: data.status,
       runtime: data.runtime,
-      rating: data.rating[0].average,
-      image: data.image[0].medium,
-      time: data.schedule[0].time,
-      days: data.schedule[0].days,
+      rating: data.rating.average,
+      image: data.image.medium,
+      time: data.schedule.time,
+      days: data.schedule.days,
     };
   }
 }
