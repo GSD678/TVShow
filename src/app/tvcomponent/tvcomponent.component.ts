@@ -17,15 +17,15 @@ export class TVComponentComponent implements OnInit {
       premiered: '',
       network: '',
       image:
-        'https://static.tvmaze.com/uploads/images/medium_portrait/403/1007647.jpg',
+        '',
       rating: 0,
       runtime: 0,
-      time: '22:00',
-      days: 'Sunday',
+      time: '',
+      days: '',
     };
   }
 
   ngOnInit(): void {
-    this.tVServiceService.getCurrentTVData('Game of Thrones').subscribe(data => this.current = data);
+    this.tVServiceService.getCurrentTVData('Game of thrones').subscribe(data => this.current = data);
   }
 }
