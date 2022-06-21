@@ -1,20 +1,18 @@
-<div>
-  <div>
-    <span>{{ current.name }}</span
-    ><br />
-    <span>{{ current.premiered | date: "fullDate" }}</span
-    ><br />
-    <span>{{ current.network }}</span
-    ><br />
-    <span
-      >{{ current.rating }},
-      <p>Runtime: {{ current.runtime }} mins</p> </span
-    ><br />
+<div *ngIf="current">
+  <div *ngIf="current.name">
+    <span>{{ current.name }}</span><br />
+    <span>{{ current.premiered | date: "fullDate" }}</span><br />
+    <span>{{ current.network }}</span><br />
+    <span>{{ current.rating }},
+      <p>Runtime: {{ current.runtime }} mins</p> </span><br />
     <span>{{ current.time }} </span>
 
     <span>{{ current.days }}</span>
   </div>
-  <div>
+  <div *ngIf="current.image">
     <img [src]="current.image" />
+  </div>
+  <div *ngIf="!current.name">
+    No data
   </div>
 </div>
