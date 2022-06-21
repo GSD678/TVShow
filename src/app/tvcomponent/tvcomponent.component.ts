@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ITV } from '../itv';
+import { TVServiceService } from '../tvservice.service';
 
 @Component({
   selector: 'app-tvcomponent',
@@ -9,7 +10,7 @@ import { ITV } from '../itv';
 export class TVComponentComponent implements OnInit {
   current: ITV;
 
-  constructor() {
+  constructor(private tVServiceService: TVServiceService) {
     this.current = {
       name: "Barry",
       status: "Running",
@@ -24,6 +25,9 @@ export class TVComponentComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
+    this.tVServiceService.getCurrentTVData('Barry').subscribe(data => this.current = data)
+  
   }
 
 }
