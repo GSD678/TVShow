@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ITV } from '../itv';
 import { TVServiceService } from '../tvservice.service';
 
@@ -8,9 +8,8 @@ import { TVServiceService } from '../tvservice.service';
   styleUrls: ['./tvcomponent.component.css'],
 })
 export class TVComponentComponent implements OnInit {
-  current: ITV;
-
-  constructor(private tVServiceService: TVServiceService) {
+  @Input() current: ITV
+  constructor(private tvServiceService: TVServiceService) {
     this.current = {
       name: '',
       status: '',
@@ -26,6 +25,5 @@ export class TVComponentComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.tVServiceService.getCurrentTVData('Game of thrones').subscribe(data => this.current = data);
   }
 }

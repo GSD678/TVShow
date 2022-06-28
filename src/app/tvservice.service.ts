@@ -11,8 +11,8 @@ export class TVServiceService {
 
   getCurrentTVData(name: string) {
     return this.httpClient
-      .get<ITVData>(`https://api.tvmaze.com//singlesearch/shows?q=:${name}`)
-      .pipe(map((data) => this.transformToITV(data)));
+      .get<ITVData>(`https://api.tvmaze.com//singlesearch/shows?q=${name}`)
+      .pipe(map(data => this.transformToITV(data)));
   }
 
   transformToITV(data: ITVData) {
