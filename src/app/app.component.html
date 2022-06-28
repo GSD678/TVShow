@@ -8,11 +8,11 @@
     padding:10px;">
     <div style="text-align:center;">
     <mat-card>
-      <app-tv-search></app-tv-search>
+      <app-tv-search (searchEvent)= "doSearch($event)"></app-tv-search>
     </mat-card>
   </div>
     <mat-card>
       <div style="text-align:center;"><h2>Show details</h2></div>
-      <app-tvcomponent></app-tvcomponent>
+      <app-tvcomponent [current]="currentShow"></app-tvcomponent>
     </mat-card>
     </div>

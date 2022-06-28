@@ -8,9 +8,14 @@ import { TVServiceService } from '../tvservice.service';
   styleUrls: ['./tvcomponent.component.css'],
 })
 export class TVComponentComponent implements OnInit {
+<<<<<<< HEAD
   @Input() current: ITV;
 
   constructor(private tVServiceService: TVServiceService) {
+=======
+  @Input() current: ITV
+  constructor(private tvServiceService: TVServiceService) {
+>>>>>>> 77326423bffb3f620e8c84068e03bf60ca488650
     this.current = {
       name: '',
       status: '',
@@ -25,6 +30,9 @@ export class TVComponentComponent implements OnInit {
   }
 
   ngOnInit(): void {
+<<<<<<< HEAD
     this.tVServiceService.getCurrentTVData('Friends').subscribe(data => this.current = data);
+=======
+>>>>>>> 77326423bffb3f620e8c84068e03bf60ca488650
   }
 }
