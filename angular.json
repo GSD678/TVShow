@@ -104,5 +104,8 @@
       }
     }
   },
-  "defaultProject": "TV-Show"
+  "defaultProject": "TV-Show",
+  "cli": {
+    "analytics": false
+  }
 }
