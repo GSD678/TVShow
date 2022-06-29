@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tvshow-880ab": {
+      "hosting": {
+        "TV-Show": [
+          "tvshow-880ab"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tvshow-880ab"
+  }
+}
