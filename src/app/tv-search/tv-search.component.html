@@ -1,10 +1,10 @@
 <form>
-    <mat-form-field>
-        <mat-label>Show name</mat-label>
-        <mat-icon matPrefix>screen_search_desktop</mat-icon>
-        <input matInput [formControl]="search" />
-        <mat-error *ngIf="search.invalid">
-            Type 3 or more characters to search
-          </mat-error>
-    </mat-form-field>
+  <mat-form-field>
+    <mat-label>Show name</mat-label>
+    <mat-icon matPrefix>screen_search_desktop</mat-icon>
+    <input matInput [formControl]="search" />
+    <mat-error *ngIf="search.invalid">
+      Type 3 or more characters to search
+    </mat-error>
+  </mat-form-field>
 </form>
