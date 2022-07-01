@@ -1,0 +1,11 @@
+span {
+  font: 20px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  background-color: #acdef0;
+}
+p {
+  font: 20px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  background-color: #acdef0;
+}
+img{
+  padding: 10px;
+}
