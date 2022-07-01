@@ -1,7 +1,7 @@
 body {
     font: "Lucida Grande", Tahoma, Verdana, sans-serif;
     color: #404040;
-    background: linear-gradient(45deg, #4051B5,#80cde5);
+    background: linear-gradient(135deg,#14F5B1,#4051B5);
   }
   mat-card {
     position: relative;

@@ -11,7 +11,7 @@
   <div *ngIf="current.image">
     <img [src]="current.image" />
   </div>
-  <div *ngIf="!current.name">
+  <div *ngIf="!current.name || current">
     No data
   </div>
 </div>
