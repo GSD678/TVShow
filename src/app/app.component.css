@@ -1,13 +1,13 @@
 body {
-    font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+    font: "Lucida Grande", Tahoma, Verdana, sans-serif;
     color: #404040;
-    background: linear-gradient(#4051B5,#80cde5);
+    background: linear-gradient(45deg, #4051B5,#80cde5);
   }
   mat-card {
     position: relative;
     margin: 30px auto;
-    padding: 20px 20px 20px;
-    width: 310px;
+    padding: 20px 20px;
+    width: 450px;
     background: white;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
